@@ -61,11 +61,26 @@ const FooterSection = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full placeholder:font-sans "
+                className="w-full placeholder:font-sans placeholder:text-[#999999]"
               />
               <img src="/images/arrow.svg" alt="arrow" />
             </div>
           </div>
+        </div>
+
+        <div className="copyright-box">
+          <p>
+            Copyright © {new Date().getFullYear()} Spylt - All Right Reserved
+          </p>
+          <div className="flex items-center gap-7">
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+          </div>
+        </div>
+        <div className="flex items-center mt-0 md:px-10 px-5">
+          <p className="text-mid-brown/50 font-paragraph font-medium">
+            Designed and Developed by CuriousFellow
+          </p>
         </div>
       </div>
     </section>
