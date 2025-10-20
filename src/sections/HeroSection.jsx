@@ -1,8 +1,12 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
+import { useMediaQuery } from "react-responsive";
 
 const HeroSection = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isTablet = useMediaQuery({ query: "(max-width: 1024px)" });
+
   useGSAP(() => {
     const titleSplit = SplitText.create(".hero-title", {
       type: "chars",
@@ -55,11 +59,31 @@ const HeroSection = () => {
   return (
     <section className="bg-main-bg">
       <div className="hero-container">
-        <img
-          src="/images/static-img.png"
-          alt="hero"
-          className="absolute left-1/2 bottom-0 -translate-x-1/2 object-auto scale-100 md:scale-150"
-        />
+        {isTablet ? (
+          <>
+            {isMobile && (
+              <img
+                src="/images/hero-bg.png"
+                alt="hero-mobile"
+                className="absolute bottom-40 size-full object-cover"
+              />
+            )}
+            <img
+              src="/images/hero-img.png"
+              alt="hero-tablet"
+              className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto"
+            />
+          </>
+        ) : (
+          <video
+            src="/video/hero-bg.mp4"
+            className="absolute inset-0 size-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        )}
 
         <div className="hero-content opacity-0">
           <div className="overflow-hidden">

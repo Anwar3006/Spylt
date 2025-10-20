@@ -1,4 +1,10 @@
+import { useMediaQuery } from "react-responsive";
+
 const FooterSection = () => {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
+
   return (
     <section className="footer-section">
       <img
@@ -14,13 +20,21 @@ const FooterSection = () => {
           </h1>
         </div>
 
-        <video
-          src="/videos/splash.mp4"
-          autoPlay
-          muted
-          playsInline
-          className="absolute top-0 object-contain mix-blend-lighten"
-        />
+        {isMobile ? (
+          <img
+            src="/images/footer-drink.png"
+            alt="footer-drink"
+            className="absolute top-0 object-contain"
+          />
+        ) : (
+          <video
+            src="/videos/splash.mp4"
+            autoPlay
+            muted
+            playsInline
+            className="absolute top-0 object-contain mix-blend-lighten"
+          />
+        )}
 
         <div className="relative flex-center gap-5 z-10 md:mt-20 mt-5">
           <div className="social-btn">
