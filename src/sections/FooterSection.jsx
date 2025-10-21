@@ -10,7 +10,7 @@ const FooterSection = () => {
       <img
         src="/images/footer-dip.png"
         alt=""
-        className="w-full object-cover -translate-y-0.5"
+        className="w-full object-cover -translate-y-1"
       />
 
       <div className="2xl:h-[110dvh] relative md:pt-[20vh] pt-[10vh]">
@@ -91,7 +91,7 @@ const FooterSection = () => {
             <p>Terms of Service</p>
           </div>
         </div>
-        <div className="flex items-center mt-0 md:px-10 px-5">
+        <div className="flex items-center mt-0 md:px-10 px-5 z-20">
           <p className="text-mid-brown/50 font-paragraph font-medium">
             Designed and Developed by CuriousFellow
           </p>

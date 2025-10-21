@@ -54,7 +54,7 @@ const HeroSection = () => {
       yPercent: 30,
       ease: "power1.inOut",
     });
-  });
+  }, []);
 
   return (
     <section className="bg-main-bg">
@@ -76,10 +76,9 @@ const HeroSection = () => {
           </>
         ) : (
           <video
-            src="/video/hero-bg.mp4"
+            src="/videos/hero-bg.mp4"
             className="absolute inset-0 size-full object-cover"
             autoPlay
-            loop
             muted
             playsInline
           />

@@ -233,7 +233,7 @@ body::-webkit-scrollbar {
     @apply bg-milk relative w-full h-[120dvh];
 
     .pin-box {
-      @apply flex items-center justify-center w-full ps-52 absolute 2xl:bottom-32 bottom-[50vh];
+      @apply flex items-center justify-center w-full ps-52 absolute top-1/2 -translate-y-3/4;
 
       .vd-card {
         @apply md:w-96 w-80 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden lg:relative absolute border-[.5vw] border-milk;
@@ -249,7 +249,7 @@ body::-webkit-scrollbar {
     @apply 2xl:min-h-dvh overflow-hidden relative bg-[#222123];
 
     .social-btn {
-      @apply border border-[#faeade33] md:size-[5vw] size-14 md:p-0 p-3 flex justify-center items-center rounded-full hover:bg-[#ffffff1a] transition-colors cursor-pointer;
+      @apply border border-[#faeade33] md:size-[5vw] size-14 md:p-0 p-3 flex justify-center items-center rounded-full hover:bg-[#ffffff1a] transition-colors cursor-pointer z-20;
     }
 
     input {

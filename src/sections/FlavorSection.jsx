@@ -64,7 +64,7 @@ const FlavorTitle = () => {
         start: "top 1%",
       },
     });
-  });
+  }, []);
 
   return (
     <div className="general-title col-center h-full 2xl:gap-32 xl:gap-24 gap-16">
@@ -145,7 +145,7 @@ const FlavorSlider = () => {
         },
         "<"
       );
-  });
+  }, [isTablet]);
 
   return (
     <div ref={sliderRef} className="slider-wrapper">

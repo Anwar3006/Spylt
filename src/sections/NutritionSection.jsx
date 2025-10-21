@@ -60,7 +60,7 @@ const NutritionSection = () => {
       duration: 1,
       opacity: 1,
     });
-  });
+  }, []);
 
   return (
     <section className="nutrition-section">
