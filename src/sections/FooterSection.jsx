@@ -91,7 +91,7 @@ const FooterSection = () => {
             <p>Terms of Service</p>
           </div>
         </div>
-        <div className="flex items-center mt-0 md:px-10 px-5">
+        <div className="flex items-center mt-0 md:px-10 px-5 z-20">
           <p className="text-mid-brown/50 font-paragraph font-medium">
             Designed and Developed by CuriousFellow
           </p>

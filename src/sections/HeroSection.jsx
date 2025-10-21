@@ -54,7 +54,7 @@ const HeroSection = () => {
       yPercent: 30,
       ease: "power1.inOut",
     });
-  });
+  }, []);
 
   return (
     <section className="bg-main-bg">

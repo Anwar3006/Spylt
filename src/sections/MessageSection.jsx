@@ -64,7 +64,7 @@ const MessageSection = () => {
       duration: 1,
       stagger: 0.02,
     });
-  });
+  }, []);
   return (
     <section className="message-content">
       <div className="container mx-auto flex-center py-28 relative">

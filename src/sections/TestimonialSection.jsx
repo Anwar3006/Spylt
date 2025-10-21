@@ -56,7 +56,7 @@ const TestimonialSection = () => {
       stagger: 0.2,
       ease: "power1.inOut",
     });
-  });
+  }, []);
 
   const handlePlay = (videoIndex) => {
     const video = vdRef.current[videoIndex];
